@@ -1,0 +1,18 @@
+.bodyItem {
+   background-color: rgba(233, 233, 233, 0.515);
+   border-radius: 5px;
+   padding: 5px;
+   &:not(:last-child) {
+      margin-bottom: 10px;
+   }
+}
+.textItem {
+   margin-bottom: 10px;
+}
+.buttonItem {
+   border-radius: 3px;
+   padding: 3px;
+   &:not(:last-child) {
+      margin-right: 10px;
+   }
+}

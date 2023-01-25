@@ -1,0 +1,48 @@
+.wrapper {
+   min-height: 100vh;
+}
+
+.container {
+   max-width: 500px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.navbar {
+   width: 100%;
+   padding: 20px 0;
+}
+.navbarList {
+   display: flex;
+   justify-content: space-around;
+   gap: 10px;
+}
+.navbarItem {
+   flex: 1 1 50%;
+   display: flex;
+   justify-content: center;
+   border-radius: 4px;
+   background-color: rgba(20, 20, 20, 0.101);
+}
+.navbarItemActive {
+   flex: 1 1 50%;
+   display: flex;
+   justify-content: center;
+   border-radius: 4px;
+   color: rgb(199, 206, 199);
+   font-weight: 700;
+   background-color: rgba(20, 20, 20, 0.615);
+}
+.form {
+   width: 100%;
+}
+.body {
+   background-color: rgba(11, 67, 0, 0.489);
+   width: 100%;
+   border-radius: 10px;
+   padding: 20px;
+   text-align: center;
+}
