@@ -44,7 +44,7 @@ const Form = ({ list, setList }) => {
          <input
          className={s.formBtn}
             type="submit"
-            value="Submit"
+            value="Save the pare"
             disabled={!valueUkr}
             onClick={() => handleSubmit(valueEn, valueUkr)}
          />

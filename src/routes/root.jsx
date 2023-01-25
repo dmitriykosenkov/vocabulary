@@ -23,7 +23,6 @@ export const Root = () => {
          <div className={s.container}>
             <nav className={s.navbar}>
                <ul className={s.navbarList}>
-                  {/* <li className={s.navbarItem}> */}
                      <NavLink
                         to={`/`}
                         className={({ isActive, pending }) =>
@@ -32,8 +31,6 @@ export const Root = () => {
                      >
                         Home
                      </NavLink>
-                  {/* </li>
-                  <li className={s.navbarItem}> */}
                      <NavLink
                         to={`list`}
                         className={({ isActive, pending }) =>
@@ -42,7 +39,6 @@ export const Root = () => {
                      >
                         List
                      </NavLink>
-                  {/* </li> */}
                </ul>
             </nav>
             <div className={s.form}>
