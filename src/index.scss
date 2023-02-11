@@ -25,6 +25,7 @@ body[data-theme="light"] {
       background-color: $color-ui-base-light;
       color: $color-light;
       box-shadow: $shadow-light;
+      padding: 5px 15px;
    }
 }
 body[data-theme="dark"] {
@@ -34,6 +35,7 @@ body[data-theme="dark"] {
       background-color: $color-ui-base-dark;
       color: $color-dark;
       box-shadow: $shadow-dark;
+      padding: 5px 15px;
    }
 }
 a {
