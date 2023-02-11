@@ -41,13 +41,13 @@ const Form = ({ list, setList }) => {
                onChange={(e) => setValueUkr(e.target.value)}
             />
          </div>
-         <input
+         <button
          className={s.formBtn}
             type="submit"
-            value="Save the pare"
+            // value="Save the pare"
             disabled={!valueUkr}
             onClick={() => handleSubmit(valueEn, valueUkr)}
-         />
+         >Save the pare</button>
       </div>
    );
 };

@@ -1,19 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
+@import "./vars";
 
-*, ::before, ::after {
+
+*,
+::before,
+::after {
    margin: 0;
    padding: 0;
    border: 0;
    box-sizing: border-box;
 }
 
-
 html,
 body {
    font-family: "Roboto";
-  min-height: 100%;
-  background: rgb(212, 212, 212);
-  font-size: 18px;
+   min-height: 100%;
+   font-size: 18px;
+   transition: ease all 0.3s;
+}
+body[data-theme="light"] {
+   background-color: $color-bg-light;
+   color: $color-bg-light;
+   input,button {
+      background-color: $color-ui-base-light;
+      color: $color-light;
+      box-shadow: $shadow-light;
+   }
+}
+body[data-theme="dark"] {
+   background-color: $color-bg-dark;
+   color: $color-bg-dark;
+   input,button {
+      background-color: $color-ui-base-dark;
+      color: $color-dark;
+      box-shadow: $shadow-dark;
+   }
 }
 a {
    text-decoration: none;
@@ -22,15 +43,12 @@ a {
 textarea,
 input,
 button {
+   cursor: pointer;
    font-weight: inherit;
    font-size: inherit;
-   color: inherit;
    font-family: inherit;
 }
-button {
-   cursor: pointer;
-   background-color: inherit;
-}
+
 
 ul {
    list-style: none;
