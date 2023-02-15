@@ -14,17 +14,20 @@ const WordItem = ({ item, deleteItem, editItem }) => {
    return (
       <li key={item.id} className={s.bodyItem}>
          {!editMode ? (
-            <div>
+            <div className={s.bodyInner}>
+               <div className={s.lessonNumber}>{item.lesson}</div>
                <div className={s.textItem}>
                   <span>{item.en}</span> - {item.ukr}
                </div>
-               <button className={s.buttonItem} onClick={() => setEditMode(true)}>Edit</button>
-               <button
-                  className={s.buttonItem}
-                  onClick={() => deleteItem(item.id)}
-               >
-                  Delete
-               </button>
+               <div className={s.actions}>
+                  <button className={s.buttonItem} onClick={() => setEditMode(true)}>Edit</button>
+                  <button
+                     className={s.buttonItem}
+                     onClick={() => deleteItem(item.id)}
+                  >
+                     Delete
+                  </button>
+               </div >
             </div>
          ) : (
             <div className={s.editMode}>

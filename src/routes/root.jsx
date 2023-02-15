@@ -53,7 +53,7 @@ export const Root = () => {
                         isActive ? s.navbarItemActive : s.navbarItem
                      }
                   >
-                     List
+                     Word list
                   </NavLink>
 
                   <button className={s.themeBtn} onClick={toggleTheme}>
