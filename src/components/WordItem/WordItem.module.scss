@@ -21,9 +21,28 @@ body[data-theme="dark"] .bodyItem  {
       font-weight: 600;
    }
 }
+.editMode {
+   display: grid;
+   grid-template: 1fr / repeat(2, 1fr);
+   gap: 10px;
+}
+.editInput {
+   width: 100%;
+   padding: 0 5px;
+   line-height: 1;
+   border-radius: 3px;
+   background-color: rgb(242, 242, 242);
+   color: #1b1b1b;
+   &:focus {
+      outline: 2px  solid rgba(94, 93, 75, 0.688);
+   }
+  
+}
 .buttonItem {
+   grid-column: span 2;
    border-radius: 3px;
    padding: 3px;
+   
    &:not(:last-child) {
       margin-right: 10px;
    }

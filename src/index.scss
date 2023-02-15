@@ -23,6 +23,7 @@ body[data-theme="light"] {
    color: $color-bg-light;
    input,button {
       background-color: $color-ui-base-light;
+      // background-color: #0584f2;
       color: $color-light;
       box-shadow: $shadow-light;
       padding: 5px 15px;
@@ -33,6 +34,7 @@ body[data-theme="dark"] {
    color: $color-bg-dark;
    input,button {
       background-color: $color-ui-base-dark;
+      // background-color: #0584f2;
       color: $color-dark;
       box-shadow: $shadow-dark;
       padding: 5px 15px;
