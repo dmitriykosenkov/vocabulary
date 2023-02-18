@@ -10,6 +10,7 @@ const WordsList = () => {
             .filter(item => {
                return valueEn.toLowerCase() === '' ? item : item.en.toLowerCase().includes(valueEn)
             })
+            .reverse()
             .map((item) => (
                <WordItem key={item.id} item={item} deleteItem={deleteItem} editItem={editItem}/>
             ))
